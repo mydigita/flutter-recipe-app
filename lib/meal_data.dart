@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 
 import './models/category_model.dart';
-import './models/meal.dart';
+import 'models/meal_model.dart';
 
 final listOfCategories = [
   AddCategory(

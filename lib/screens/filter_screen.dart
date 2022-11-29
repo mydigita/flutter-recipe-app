@@ -50,7 +50,9 @@ class _FilterScreenState extends State<FilterScreen> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: const Text('Select a meal type'),
+        title: const Text(
+          'Select a meal type',
+        ),
         actions: [
           IconButton(
             icon: const Icon(Icons.save),
@@ -71,7 +73,14 @@ class _FilterScreenState extends State<FilterScreen> {
         children: [
           Container(
             padding: const EdgeInsets.all(14),
-            child: const Text('Select a meal type and press on save icon'),
+            child: const Text(
+              'Select a meal type and press on save icon',
+              style: TextStyle(
+                fontSize: 16,
+                fontWeight: FontWeight.bold,
+                color: Colors.pink,
+              ),
+            ),
           ),
           const Divider(),
           Expanded(

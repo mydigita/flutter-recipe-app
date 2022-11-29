@@ -5,7 +5,7 @@ import './screens/tabs_screen.dart';
 import './screens/meal_detail_screen.dart';
 import './screens/category_meals_screen.dart';
 import './screens/categories_screen.dart';
-import './models/meal.dart';
+import 'models/meal_model.dart';
 
 void main() {
   runApp(const MyApp());
