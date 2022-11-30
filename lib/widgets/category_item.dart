@@ -18,20 +18,24 @@ class CategoryItem extends StatelessWidget {
       onTap: () => selectCategory(context),
       splashColor: Theme.of(context).primaryColor,
       borderRadius: BorderRadius.circular(20),
-      child: Container(
-        padding: const EdgeInsets.all(10),
-        decoration: BoxDecoration(
-          borderRadius: BorderRadius.circular(20),
-          gradient: LinearGradient(
-            colors: [color.withOpacity(0.8), color],
-            begin: Alignment.topLeft,
-            end: Alignment.bottomRight,
+      child: Card(
+        elevation: 5,
+        child: Container(
+          padding: const EdgeInsets.all(10),
+          decoration: BoxDecoration(
+            borderRadius: BorderRadius.circular(5),
+            gradient: LinearGradient(
+              colors: [color.withOpacity(0.7), color],
+              begin: Alignment.topLeft,
+              end: Alignment.bottomLeft,
+            ),
           ),
-        ),
-        child: Center(
-          child: Text(
-            title,
-            style: const TextStyle(fontSize: 18.0, fontWeight: FontWeight.bold),
+          child: Center(
+            child: Text(
+              title,
+              style:
+                  const TextStyle(fontSize: 18.0, fontWeight: FontWeight.bold),
+            ),
           ),
         ),
       ),
