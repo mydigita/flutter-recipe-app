@@ -7,6 +7,7 @@ class MainDrawer extends StatelessWidget {
       leading: Icon(
         icon,
         size: 24,
+        color: Colors.pink,
       ),
       title: Text(
         title,
@@ -42,6 +43,7 @@ class MainDrawer extends StatelessWidget {
               Navigator.of(context).pushReplacementNamed('/');
             },
           ),
+          const Divider(),
           buildListTile(
             'Choose / Filter meal type',
             Icons.settings,
@@ -50,6 +52,7 @@ class MainDrawer extends StatelessWidget {
                   .pushReplacementNamed(FilterScreen.routeName);
             },
           ),
+          const Divider(),
         ],
       ),
     );
