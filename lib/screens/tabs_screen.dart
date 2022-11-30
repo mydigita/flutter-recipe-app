@@ -21,7 +21,7 @@ class _TabScreenState extends State<TabScreen> {
     _pages = [
       {
         'page': const CategoriesScreen(),
-        'title': 'Select a category',
+        'title': 'Select a meal category',
       },
       {
         'page': FavoriteScreen(favoriteMeals: widget.favoriteMeals),
